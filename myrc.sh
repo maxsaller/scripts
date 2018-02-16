@@ -54,7 +54,7 @@ UBlue="\[\033[4;34m\]"        # Blue
 UPurple="\[\033[4;35m\]"      # Purple
 
 # Various variables you might want for your PS1 prompt instead
-Time24h="`date +%H:%M:%S`"
+Time24h="\A"
 PathShort="\w"
 NewLine="\n"
 Username="\u"
