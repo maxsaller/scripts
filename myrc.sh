@@ -17,11 +17,7 @@ alias xx='exit'
 alias ll='ls -lthX --group-directories-first'
 alias la='ls -lthXa --group-directories-first'
 
-alias up='~/scripts/up.sh'
-alias xx='exit'
-alias reup='~/scripts/up.sh; sudo reboot'
-
-alias atom='sudo atom'
+alias xx='logout'
 
 alias myrc='source ~/scripts/myrc.sh'
 
@@ -61,8 +57,7 @@ Username="\u"
 Hostname="\H"
 
 if [ "$color_prompt" = yes ]; then
-    source /etc/bash_completion.d/git-prompt
-    PS1=$NewLine$Symbol"┌──["$BPurple$Username$Symbol"]──["$UPurple$Hostname$Color_Off$Symbol"]"$Green'$(__git_ps1)'$NewLine$Color_Off$Symbol"│:"$PathShort$NewLine$Symbol"└──<"$Time24h">──$ "$Color_Off
+    PS1=$NewLine$Symbol"┌──["$BPurple$Username$Symbol"]──["$UPurple$Hostname$Color_Off$Symbol"]"$NewLine$Color_Off$Symbol"│:"$PathShort$NewLine$Symbol"└──<"$Time24h">──$ "$Color_Off
 else
     PS1='\u@\h:\w\$ '
 fi
