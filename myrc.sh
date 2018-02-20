@@ -26,6 +26,7 @@ alias atom='sudo atom'
 alias myrc='source ~/scripts/myrc.sh'
 
 alias eth='ssh -X max@pc-richardson2.ethz.ch'
+alias euler='ssh sallerm@euler.ethz.ch'
 # ---
 
 
