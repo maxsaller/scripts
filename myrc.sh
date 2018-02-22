@@ -1,7 +1,18 @@
 #!/bin/bash
+#
+# Various bash aliases, prefernces and settings
+# Needs to be sourced from .bashrc or similar
+#
+
 
 # PATH
 export PATH=$PATH
+# ---
+
+
+
+# GIT COMPLETION
+source ~/.git-completion.sh
 # ---
 
 

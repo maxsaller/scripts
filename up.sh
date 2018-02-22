@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Simple update script, includes apt, pip and atom apm
+#
 
 echo 'UPDATING'
 echo ''
