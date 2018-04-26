@@ -15,10 +15,10 @@ sleep 1
 sudo apt autoremove
 echo ''
 
-pip list --outdated | cut -d ' ' -f1 | xargs sudo -H pip install -U
+pip list --outdated | tail -n+3 | cut -d ' ' -f1 | xargs sudo -H pip install -U
 echo ''
 sleep 1
-pip3 list --outdated | cut -d ' ' -f1 | xargs sudo -H pip3 install -U
+pip3 list --outdated | tail -n+3 | cut -d ' ' -f1 | xargs sudo -H pip3 install -U
 echo ''
 
 sudo apm update
