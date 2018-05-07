@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# PATH
+# PATHS
 export PATH=$PATH
+export PROJECTS=~/repos
+export PYTHONPATH="/cluster/home/sallerm/repos/lib_python:/cluster/home/sallerm/repos/lib:/cluster/home/sallerm/repos/share:/cluster/home/sallerm/repos/lib/f2py"
 # ---
 
 
@@ -22,6 +24,9 @@ alias xx='logout'
 alias myrc='source ~/scripts/myrc.sh'
 
 alias eth='ssh -X max@pc-richardson2.ethz.ch'
+
+alias bj='bjobs'
+alias bbj='bbjobs'
 # ---
 
 
@@ -65,4 +70,16 @@ fi
 
 
 
+# Modules
+module load new
+module load intel/2018.0
+module load mkl/2018.0
+module load python/2.7.14
+# ---
+
+
+
+# Python link
+pyth=`which python`
+# ---
 
