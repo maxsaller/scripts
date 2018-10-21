@@ -14,8 +14,9 @@ function update_apt () {
 
 function update_pip () {
 	/usr/local/bin/pip list --no-cache-dir --outdated | tail -n+3 | awk '{print $1}' | xargs /usr/local/bin/pip install --user --upgrade
+    #/usr/bin/pip2 list --no-cache-dir --outdated | tail -n+3 | awk '{print $1}' | xargs /usr/bin/pip2 install --user --upgrade
     /usr/local/bin/pip3 list --no-cache-dir --outdated | tail -n+3 | awk '{print $1}' | xargs /usr/local/bin/pip3 install --user --upgrade
-
+    echo ''
 }
 
 function update_atom () {

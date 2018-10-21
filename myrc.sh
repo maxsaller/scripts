@@ -25,8 +25,8 @@ alias ....='cd ../../..'
 alias cl='clear'
 alias xx='exit'
 
-alias ll='ls -lthX --color --group-directories-first'
-alias la='ls -lthXa --color --group-directories-first'
+alias ll='ls -lthX -Isnap -IDesktop --color --group-directories-first'
+alias la='ls -lthXa -Isnap -IDesktop --color --group-directories-first'
 
 alias up='~/scripts/up.sh'
 alias xx='exit'
@@ -37,7 +37,7 @@ alias atom='sudo atom'
 alias myrc='source ~/scripts/myrc.sh'
 
 alias eth='ssh -X max@pc-richardson2.ethz.ch'
-alias euler='ssh sallerm@euler.ethz.ch'
+alias euler='ssh -X sallerm@euler.ethz.ch'
 
 alias vi='vim'
 # ---
@@ -85,18 +85,19 @@ fi
 
 
 # LS_COLORS
-LS_Bold="01"
-LS_Underline="04"
-LS_Black="30"	
-LS_Red="31"	
-LS_Green="32"	
-LS_Orange="33"	
-LS_Blue="34"	
-LS_Purple="35"	
-LS_Cyan="36"	
-LS_Grey="37"	
+#
+# Bold          01
+# Underline     04
+# Black         30
+# Red           31
+# Green         32
+# Orange        33
+# Blue          34
+# Purple        35
+# Cyan          36
+# Grey          37
 
-LS_COLORS="di=${LS_Bold}:ex=${LS_Red}"
+LS_COLORS="di=01:ex=31:*.py=33"
 export LS_COLORS
 
 
