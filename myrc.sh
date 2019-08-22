@@ -12,7 +12,7 @@ export PATH=$PATH
 
 
 # GIT COMPLETION
-source ~/.git-completion.sh
+source ~/scripts/git.sh
 # ---
 
 
@@ -31,8 +31,6 @@ alias la='ls -lthXa -Isnap -IDesktop --color --group-directories-first'
 alias up='~/scripts/up.sh'
 alias xx='exit'
 alias reup='~/scripts/up.sh; sudo reboot'
-
-alias atom='sudo atom'
 
 alias myrc='source ~/scripts/myrc.sh'
 
