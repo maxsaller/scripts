@@ -28,16 +28,9 @@ alias xx='exit'
 alias ll='ls -lthX -Isnap -IDesktop --color --group-directories-first'
 alias la='ls -lthXa -Isnap -IDesktop --color --group-directories-first'
 
-alias up='~/scripts/up.sh'
 alias xx='exit'
-alias reup='~/scripts/up.sh; sudo reboot'
-
-alias atom='sudo atom'
 
 alias myrc='source ~/scripts/myrc.sh'
-
-alias eth='ssh -X max@pc-richardson2.ethz.ch'
-alias euler='ssh -X sallerm@euler.ethz.ch'
 
 alias vi='vim'
 # ---
@@ -75,7 +68,7 @@ Username="\u"
 Hostname="\H"
 
 if [ "$color_prompt" = yes ]; then
-    source /etc/bash_completion.d/git-prompt
+    source /etc/bash_completion.d/git
     PS1=$NewLine$Symbol"┌──["$BPurple$Username$Symbol"]──["$UPurple$Hostname$Color_Off$Symbol"]"$Green'$(__git_ps1)'$NewLine$Color_Off$Symbol"│:"$PathShort$NewLine$Symbol"└──<"$Time24h">──$ "$Color_Off
 else
     PS1='\u@\h:\w\$ '
