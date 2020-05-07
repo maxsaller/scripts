@@ -7,6 +7,14 @@
 
 # PATH
 export PATH=$PATH
+export PROJECTS="$HOME/repos"
+export PYTHONPATH="$HOME/repos/lib_python"
+# ---
+
+
+
+# MATPLOTLIBRC
+export MATPLOTLIBRC="$HOME/scripts/matplotlibrc"
 # ---
 
 
@@ -28,11 +36,18 @@ alias xx='exit'
 alias ll='ls -lthX -Isnap -IDesktop --color --group-directories-first'
 alias la='ls -lthXa -Isnap -IDesktop --color --group-directories-first'
 
+alias m='more'
 alias xx='exit'
 
-alias myrc='source ~/scripts/myrc.sh'
+alias myrc='nano ~/scripts/myrc.sh && source ~/scripts/myrc.sh'
 
 alias vi='vim'
+alias rmoe='rm *.out *.err'
+
+alias qme='squeue -u msaller'
+alias qus='squeue -p eitan'
+
+alias nstat="python $HOME/scripts/nstatus.py"
 # ---
 
 
@@ -94,3 +109,7 @@ LS_COLORS="di=01:ex=31:*.py=33"
 export LS_COLORS
 
 
+# MODULES
+module load intel/18.0.3
+module load python3.7-anaconda/2019.10
+# ---
